@@ -1,13 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+
+
 #main__container
 {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items:center;
+  
 }
 
-button{
-  width: 50px;
-  height: 50px;
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+#add:before, #add:after{
+  content: "ADD";
+}
+#sub:before, #sub:after{
+  content: "SUB";
+}
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+#header {
+  text-align: left;
+  background: black;
+  color: #e6ddc5;
+  text-shadow: 3px;
+  font-size: 48px;
+  width: 100%;
+  height: 4rem;
+  position: sticky;
+}
+
+h1{
+  font-size: 72px;
+  height: 105px;
+  width: 125px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+#txt{
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reset:before, #reset:after{
+  content: "RESET";
 }

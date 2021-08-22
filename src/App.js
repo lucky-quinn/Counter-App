@@ -11,14 +11,28 @@ function App() {
   const decrement=()=>{
     setNUM(num-1)
   }
+  const reset=()=>{
+    setNUM(0)
+  }
   return (
     <div>
+      <header id="header"> Counter App </header>
       <div id="main__container">
-        <h1>{num}</h1>
+        <div id="txt">
+          <h1>{num}</h1>
+        </div>
          <div id="btn__collection">
-            <button onClick={increment}>ADD</button>
-           <button onClick={decrement}>SUB</button>
+           <span>
+              <a  id="add" onClick={increment}></a>
+            </span>
+            <span>
+              <a  id="sub" onClick={decrement}></a>
+           </span>
+           <span>
+              <a  id="reset" onClick={reset}></a>
+           </span>
          </div>
+
        </div>
      </div>
   );
