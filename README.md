@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# First project with the React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was devloepd by Reuben during his web devlopment bootcamp using React App
 
 ## Available Scripts
 
