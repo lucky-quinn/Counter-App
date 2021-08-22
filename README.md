@@ -1,6 +1,6 @@
 # First project with the React App
 
-This project was devloepd by Reuben during his web devlopment bootcamp using React App
+This project was devloped by Reuben during his web devlopment bootcamp using the React App
 
 ## Available Scripts
 
